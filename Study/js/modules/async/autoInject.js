@@ -1,16 +1,16 @@
 let async=require('async')
 /**
  * async.autoInject(tasks,callback)
- * 类似auto 
+ * 类似auto 控制tasks中方法执行逻辑顺序 后面的方法可以接收前面方法的结果
  * 区别  arry 中 funtion不是接收results 对象，而是接收参数列表 depends on are still spread into arguments
  *       funtion() 参数列表位置对应即可，参数可以简写为a b c 
- * tasks function 或 array 
- *       array 前面是依赖项，最后一项是funtion(arg1,arg2,callback)
+ * tasks_obj function 或 array 
+ *           array 前面是依赖项，最后一项是funtion(arg1,arg2,callback)
  */
 async.autoInject({
     get_data:function(callback){
         console.log('get_data 开始执行')
-        callback(null,'get_data_content')
+        callback(null,'get_data_content','hahaha')
     },
     make_folder:function(callback){
         console.log('make_folder 开始执行')
