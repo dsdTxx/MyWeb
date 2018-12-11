@@ -42,5 +42,42 @@ if (cluster.isMaster) {
 
 ```
 
+## REPL
 
+Read Eval Print Loop  交互式解释器，可以用来直接运行js代码，用来进行简单的验证
 
+```shell
+$ node
+>1+2
+3
+>.exit 
+```
+
+命令
+
+var x=10 声明变量，后续可以使用，不加var声明，会直接显示出
+
+_  获取上一个表达式的值
+
+.exit 退出
+
+ctrl+ C 两次退出REPL
+
+# 测试
+
+### 概念
+
+TDD  测试驱动开发
+
+BDD  行为驱动开发
+
+代码覆盖率
+
+### 测试框架
+
+- nodeunit
+- mocha
+- ava
+- jest
+
+node测试   http://i5ting.github.io/node-debug-tutorial/
