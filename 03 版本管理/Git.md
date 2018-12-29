@@ -74,8 +74,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 ### 远程仓库
 
 * 前提：新建远程仓库
-
-* 将本地仓库同远程仓库关联，进入工作目录
+* 进入本地文件夹，通过 git init 将本地文件夹初始化为可以用git管理的文件
 * 本地推送至远程仓库   
 * $ git remote add origin https://github.com/dsdTxx/learngit.git
 * 克隆远程仓库内容至本地仓库，本地无需新建gitskills
